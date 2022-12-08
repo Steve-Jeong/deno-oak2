@@ -36,9 +36,9 @@ app.use(async (ctx, next) => {
 });
 
 // Hello World Middleware
-app.use((ctx, next) => {
+app.use(async (ctx, next) => {
   ctx.response.body = "Hello World Middleware!";
-  next()
+  await next()
 });
 
 const router = new Router();
