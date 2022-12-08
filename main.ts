@@ -58,21 +58,3 @@ const PORT = 8000
 console.log(`Server listening on http://localhost:${PORT}`)
 await app.listen({ port: PORT });
 
-
-// // app.ts
-// import { Application } from "https://deno.land/x/oak@v10.5.1/mod.ts";
-// import { viewEngine, etaEngine, oakAdapter } from "https://deno.land/x/view_engine@v10.5.1c/mod.ts"
-
-// const app = new Application();
-
-// app.use(
-//   viewEngine(oakAdapter, etaEngine, {
-//     viewRoot: "./views",
-//   })
-// );
-
-// app.use(async (ctx, next) => {
-//   ctx.render("index.eta", { name: "John" } );
-// });
-
-// await app.listen({ port: 8000 });
