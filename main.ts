@@ -35,11 +35,11 @@ app.use(async (ctx, next) => {
   ctx.response.headers.set("X-Response-Time", `${ms}ms`);
 });
 
-// Hello World Middleware
-app.use(async (ctx, next) => {
-  ctx.response.body = "Hello World Middleware!";
-  await next()
-});
+// // Hello World Middleware
+// app.use(async (ctx, next) => {
+//   ctx.response.body = "Hello World Middleware!";
+//   await next()
+// });
 
 const router = new Router();
 router
